@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ButtonMix.qml</file>
+        <file>GameBoard.qml</file>
+        <file>MyPopup.qml</file>
+        <file>Tile.qml</file>
+    </qresource>
+</RCC>

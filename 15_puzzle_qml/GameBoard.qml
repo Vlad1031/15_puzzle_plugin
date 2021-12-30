@@ -4,7 +4,6 @@ import Backend 1.0
 GridView{
     id: root
     property alias mixButton: backend
-    property alias win: backend
 
     cellHeight: height / 4
     cellWidth: width / 4
@@ -31,6 +30,10 @@ GridView{
             anchors.fill: parent
             onClicked: {
                 root.model.move(index)
+                if(root.model.win() === true){
+                    mypopup.open()
+                    root.model.shaffle()
+                }
             }
         }
     }

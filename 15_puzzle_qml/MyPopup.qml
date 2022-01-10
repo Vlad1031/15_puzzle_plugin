@@ -4,6 +4,8 @@ import QtQuick.Controls 2.4
 Popup{
     id: popup
     anchors.centerIn: parent
+    width: 400
+    height: 200
     focus: true
     dim: true
 
@@ -24,11 +26,6 @@ Popup{
             GradientStop { position: 1.0; color: "red" }
         }
     }
-
-    x: (parent.width - width) / 2
-    y: (parent.height - height) / 2
-    width: parent.width / 2
-    height: parent.height / 2
 
     closePolicy: Popup.CloseOnEscape
 }

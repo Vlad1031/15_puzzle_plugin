@@ -1,6 +1,4 @@
-#!/bin/bash
 
-my_qmake="qmake"
 my_build=build
 
 if [ ! -d "$my_build" ]; then
@@ -9,10 +7,10 @@ fi
 
 cd $my_build
 
-echo $PATH $my_qmake ../Backend
+qmake ../Backend
 make
 
-echo $PATH $my_qmake ../15_puzzle_qml
+qmake ../15_puzzle_qml
 make
 
 ./15_puzzle_qml
